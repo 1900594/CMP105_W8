@@ -6,6 +6,19 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
+	ball_1 = new Ball();
+	ball_2 = new Ball2();
+
+	ball1texture.loadFromFile("gfx/Beach_Ball.png");
+	ball_1->setTexture(&ball1texture);
+	ball_1->setSize(sf::Vector2f(100, 100));
+	ball_1->setPosition(100, 250);
+
+	ball2texture.loadFromFile("gfx/Beach_Ball.png");
+	ball_2->setTexture(&ball1texture);
+	ball_2->setSize(sf::Vector2f(100, 100));
+	ball_2->setPosition(700, 250);
+
 
 }
 
@@ -23,6 +36,8 @@ void Level::handleInput(float dt)
 // Update game objects
 void Level::update(float dt)
 {
+	ball_1->update(dt);
+	ball_2->update(dt);
 	
 }
 
@@ -30,7 +45,8 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	window->draw(*ball_1);
+	window->draw(*ball_2);
 	endDraw();
 }
 
