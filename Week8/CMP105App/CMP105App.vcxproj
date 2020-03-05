@@ -157,6 +157,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AABB.cpp" />
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Ball2.cpp" />
     <ClCompile Include="Framework\Animation.cpp" />
@@ -172,6 +173,7 @@
     <Text Include="README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AABB.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="Ball2.h" />
     <ClInclude Include="Framework\Animation.h" />

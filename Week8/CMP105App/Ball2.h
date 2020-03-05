@@ -7,6 +7,7 @@ public:
 	Ball2();
 	~Ball2();
 	void update(float dt);
+	void checkBoundingCircle(GameObject* s1, GameObject* s2);
 
 };
 
