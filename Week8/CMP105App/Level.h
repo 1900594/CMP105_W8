@@ -28,6 +28,8 @@ private:
 	Input* input;
 	GameObject* ball_1;
 	GameObject* ball_2;
+	GameObject* sqaure_1;
+	GameObject* sqaure_2;
 	sf::Texture ball1texture;
 	sf::Texture ball2texture;
 	sf::Vector2u WindX;
