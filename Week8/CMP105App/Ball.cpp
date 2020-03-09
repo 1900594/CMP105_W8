@@ -1,22 +1,29 @@
 #include "Ball.h"
-Ball::Ball()
+Ball::Ball(sf::Vector2u* x)
 {
-
+	WindX = x;
 }
 
 Ball::~Ball()
 {
-
 }
 
 void Ball::update(float dt)
 {
 	
-	move(2, 0 * dt);
+	move(velocity * dt);
+
+
+	if (getPosition().x + getSize().x >= WindX->x || getPosition().x <= 0)
+	{
+		
+		setVelocity(getVelocity().x * -1, 0);
+
+	}
 	
 }
 
-void Ball::checkBoundingCircle(GameObject* s1, GameObject* s2)
+void Ball::collisionResponse(GameObject* collider)
 {
-
+	velocity.x *= -1;
 }

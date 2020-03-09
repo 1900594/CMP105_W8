@@ -4,11 +4,11 @@
 class Ball : public GameObject, public Collision
 {
 public:
-	Ball();
+	Ball(sf::Vector2u* x);
 	~Ball();
-	void update(float dt);
-	void checkBoundingCircle(GameObject* s1, GameObject* s2);
-
+	void update(float dt) override;
+	void collisionResponse(GameObject* collider) override;
+	sf::Vector2u* WindX;
 
 };
 

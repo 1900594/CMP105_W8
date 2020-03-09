@@ -159,7 +159,6 @@
   <ItemGroup>
     <ClCompile Include="AABB.cpp" />
     <ClCompile Include="Ball.cpp" />
-    <ClCompile Include="Ball2.cpp" />
     <ClCompile Include="Framework\Animation.cpp" />
     <ClCompile Include="Framework\Collision.cpp" />
     <ClCompile Include="Framework\Input.cpp" />
@@ -175,7 +174,6 @@
   <ItemGroup>
     <ClInclude Include="AABB.h" />
     <ClInclude Include="Ball.h" />
-    <ClInclude Include="Ball2.h" />
     <ClInclude Include="Framework\Animation.h" />
     <ClInclude Include="Framework\Collision.h" />
     <ClInclude Include="Framework\Input.h" />
