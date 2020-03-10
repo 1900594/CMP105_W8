@@ -5,7 +5,7 @@
 #include <string>
 #include <iostream>
 #include "Ball.h"
-
+#include"Pong.h"
 #include "AABB.h"
 
 
@@ -30,6 +30,10 @@ private:
 	GameObject* ball_2;
 	GameObject* sqaure_1;
 	GameObject* sqaure_2;
+	GameObject* bat_1;
+	GameObject* bat_2;
+	GameObject* game_Ball;
+	sf::Texture gameBallTexture;
 	sf::Texture ball1texture;
 	sf::Texture ball2texture;
 	sf::Vector2u WindX;

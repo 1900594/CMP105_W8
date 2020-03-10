@@ -6,9 +6,10 @@ class AABB: public GameObject, public Collision
 {
 
 public:
-	AABB();
+	AABB(sf::Vector2u* x);
 	~AABB();
 	void update(float dt);
-
+	sf::Vector2u* WindX;
+	void collisionResponse(GameObject* collider) override;
 };
 
